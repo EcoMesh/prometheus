@@ -48,7 +48,7 @@ module_config:
     detectionTriggeredHigh: true
     minimumBroadcastSecs: 45
   mqtt:
-    address: 10.0.0.29
+    address:
     encryptionEnabled: true
     password: large4cats
     root: msh
@@ -59,6 +59,5 @@ module_config:
     airQualityInterval: 900
     deviceUpdateInterval: 900
     environmentUpdateInterval: 900
-owner: Node 2
-owner_short: N2
-
+owner: Node 3
+owner_short: N3
