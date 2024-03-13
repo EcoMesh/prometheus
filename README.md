@@ -93,6 +93,7 @@ Wire pins 11-13 on the Pico to the LoRa module to pins 1-3 respectively. The pin
 This configuration will allow the Pico to communicate with the LoRa module via UART. The Pico will send data to the LoRa module on pin 11 and receive data from the LoRa module on pin 12. The Pico and LoRa module share a common ground on pin 13. These messages will then be transmitted over the LoRa network.
 
 ![Pico Pinout](https://i0.wp.com/randomnerdtutorials.com/wp-content/uploads/2023/05/Raspberry-Pi-Pico-W-Pinout.png?w=861&quality=100&strip=all&ssl=1)
+![SX1262 LoRa Pinout](https://www.waveshare.com/img/devkit/accBoard/Pico-LoRa-SX1262-868M/Pico-LoRa-SX1262-868M-details-inter.jpg)
 
 # Testing
 
