@@ -1,0 +1,70 @@
+# start of Meshtastic configure yaml
+channel_url: https://meshtastic.org/e/#CgkSA56GoSgBMAESDggBEAQ4AUADSAFQHmgB
+config:
+  bluetooth:
+    fixedPin: 123456
+    mode: FIXED_PIN
+  device:
+    disableTripleClick: true
+    nodeInfoBroadcastSecs: 10800
+    serialEnabled: true
+  display:
+    screenOnSecs: 600
+  lora:
+    hopLimit: 3
+    modemPreset: MEDIUM_FAST
+    region: US
+    sx126xRxBoostedGain: true
+    txEnabled: true
+    txPower: 30
+    usePreset: true
+  network:
+    ipv4Config: {}
+    ntpServer: 0.pool.ntp.org
+    wifiEnabled: true
+    wifiPsk: ssid
+    wifiSsid: password
+  position:
+    broadcastSmartMinimumDistance: 100
+    broadcastSmartMinimumIntervalSecs: 30
+    gpsAttemptTime: 900
+    gpsEnabled: true
+    gpsUpdateInterval: 120
+    positionBroadcastSecs: 900
+    positionBroadcastSmartEnabled: true
+    positionFlags: 811
+  power:
+    lsSecs: 300
+    minWakeSecs: 10
+    sdsSecs: 4294967295
+    waitBluetoothSecs: 60
+module_config:
+  ambientLighting:
+    blue: 51
+    current: 10
+    green: 34
+    red: 60
+  detectionSensor:
+    detectionTriggeredHigh: true
+    minimumBroadcastSecs: 45
+  mqtt:
+    address: 10.0.0.29
+    enabled: true
+    jsonEnabled: true
+    password: large4cats
+    root: msh
+    username: meshdev
+  neighborInfo:
+    updateInterval: 900
+  serial:
+    echo: true
+    enabled: true
+    mode: TEXTMSG
+    rxd: 9
+    txd: 8
+  telemetry:
+    airQualityInterval: 900
+    deviceUpdateInterval: 900
+    environmentUpdateInterval: 900
+owner: Node 1
+owner_short: N1

@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "prometheus"
+version = "0.1.0"
+description = ""
+authors = ["NoahCardoza <noahcardoza@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+rshell = "^0.0.31"
+paho-mqtt = "^1.6.1"
+meshtastic-protobufs-protocolbuffers-pyi = {version = "^25.1.0.1.20231217172755+5fd2f2d6c2a0", source = "buf-src"}
+
+
+[tool.poetry.group.dev.dependencies]
+pytap2 = "^2.3.0"
+meshtastic = "^2.2.16"
+
+
+[[tool.poetry.source]]
+name = "buf-src"
+url = "https://buf.build/gen/python"
+priority = "explicit"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
